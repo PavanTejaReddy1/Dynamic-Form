@@ -20,7 +20,7 @@ function Signup() {
         }
 
         try {
-            const user = await axios.post("http://localhost:4000/auth/signup", body);
+            const user = await axios.post("http://dynamic-form-z5p8.onrender.com/auth/signup", body);
 
             toast.success(user.data.message, { theme: "dark" });
 

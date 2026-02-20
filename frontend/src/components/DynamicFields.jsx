@@ -147,7 +147,7 @@ function DynamicFields() {
     const id = localStorage.getItem("id");
 
     try {
-      const res = await axios.post(`http://localhost:4000/auth/addForm/${id}`, formFields);
+      const res = await axios.post(`http://dynamic-form-z5p8.onrender.com/auth/addForm/${id}`, formFields);
 
       setFormFields([]);
 

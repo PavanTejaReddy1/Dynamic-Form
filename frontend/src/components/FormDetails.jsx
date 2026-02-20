@@ -10,7 +10,7 @@ function FormDetails() {
   async function getFormDetails() {
     try {
       const res = axios.get(
-        `http://localhost:4000/auth/getFormDetails/${id}/${index - 1}`
+        `http://dynamic-form-z5p8.onrender.com/auth/getFormDetails/${id}/${index - 1}`
       );
 
       setForm((await res).data.form);
